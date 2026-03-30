@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # ── 2. Python ──────────────────────────────────────────────────────────
+      # ── 2. Python (pip cache built-in) ────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -30,21 +30,35 @@ jobs:
       - name: Install Python dependencies
         run: pip install -e ".[dev]"
 
-      # ── 4. Playwright browsers ─────────────────────────────────────────────
-      - name: Install Playwright browsers
-        run: playwright install firefox chromium --with-deps
+      # ── 4. Playwright — cache the browser binaries ─────────────────────────
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ hashFiles('pyproject.toml') }}
 
-      # ── 5. Launch Chromium via CDP (used by timstreams + streamsgate) ──────
+      - name: Install Playwright Chromium
+        # Only re-download when pyproject.toml changes (cache miss)
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        run: playwright install chromium --with-deps
+
+      - name: Install Chromium system deps (cache hit)
+        # Binaries are cached but system libs still need installing
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: playwright install-deps chromium
+
+      # ── 5. Launch Chromium via CDP ─────────────────────────────────────────
       - name: Start Chromium CDP on port 9222
         run: |
-          chromium-browser \
+          ~/.cache/ms-playwright/chromium-*/chrome-linux/chrome \
             --remote-debugging-port=9222 \
             --no-sandbox \
             --headless=new \
             --disable-gpu \
             --disable-dev-shm-usage \
             &
-          sleep 2   # give it a moment to bind
+          sleep 2
 
       # ── 6. Run scraper ─────────────────────────────────────────────────────
       - name: Run fetch.py
@@ -55,6 +69,6 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add events.m3u8 TV.m3u8 caches/
+          git add events.m3u8 caches/
           git diff --cached --quiet || git commit -m "chore: update M3U8 [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push
