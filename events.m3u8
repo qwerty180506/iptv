@@ -1,7 +1,13 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/refs/heads/main/TV.xml"
 
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Germany vs Ghana (TIMSTRMS)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/bdiqkk1774692968.jpg" group-title="Live Events",[Soccer] Germany vs Ghana (TIMSTRMS)
+#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[Baseball] Twins @ Royals (TIMSTRMS)" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/6bt3vo1756708502.jpg" group-title="Live Events",[Baseball] Twins @ Royals (TIMSTRMS)
+#EXTVLCOPT:http-referrer=https://embed.timstreams.fit/embed/mlb-824135
+#EXTVLCOPT:http-origin=https://embed.timstreams.fit/embed/mlb-824135
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://imgs-001.juno-api-noe.icu/secure/api/v1/mlb-824135.m3u8?md5=0aa3d1b705640cc4e6a8c19751471d66&exp=1774910196
+
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Germany vs Ghana (TIMSTRMS)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/bdiqkk1774692968.jpg" group-title="Live Events",[Soccer] Germany vs Ghana (TIMSTRMS)
 #EXTVLCOPT:http-referrer=https://embed.timstreams.fit/embed/fox-sports-1
 #EXTVLCOPT:http-origin=https://embed.timstreams.fit/embed/fox-sports-1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://imgs-001.juno-api-noe.icu/secure/api/v1/fox-sports-1.m3u8?md5=d01ddad2c2308adabdc6f92f98620d2f&exp=1774907415
+https://imgs-001.juno-api-noe.icu/secure/api/v1/fox-sports-1.m3u8?md5=b38752aa35bc13cd2d8fe47a7ec726f8&exp=1774910197
