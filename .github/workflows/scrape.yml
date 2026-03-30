@@ -2,12 +2,11 @@ name: Scrape & Publish M3U8
 
 on:
   schedule:
-    # Runs every hour at :00
     - cron: "0 * * * *"
-  workflow_dispatch: # allow manual trigger from GitHub UI
+  workflow_dispatch:
 
 permissions:
-  contents: write # needed to push the generated .m3u8 files
+  contents: write
 
 jobs:
   scrape:
@@ -15,22 +14,18 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      # ── 1. Checkout ────────────────────────────────────────────────────────
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # ── 2. Python (pip cache built-in) ────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      # ── 3. Dependencies ────────────────────────────────────────────────────
       - name: Install Python dependencies
         run: pip install -e ".[dev]"
 
-      # ── 4. Playwright — cache the browser binaries ─────────────────────────
       - name: Cache Playwright browsers
         id: playwright-cache
         uses: actions/cache@v4
@@ -39,32 +34,34 @@ jobs:
           key: playwright-chromium-${{ hashFiles('pyproject.toml') }}
 
       - name: Install Playwright Chromium
-        # Only re-download when pyproject.toml changes (cache miss)
         if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: playwright install chromium --with-deps
 
       - name: Install Chromium system deps (cache hit)
-        # Binaries are cached but system libs still need installing
         if: steps.playwright-cache.outputs.cache-hit == 'true'
         run: playwright install-deps chromium
 
-      # ── 5. Launch Chromium via CDP ─────────────────────────────────────────
       - name: Start Chromium CDP on port 9222
         run: |
-          ~/.cache/ms-playwright/chromium-*/chrome-linux/chrome \
+          CHROME=$(find ~/.cache/ms-playwright -name 'chrome' -type f | head -1)
+          echo "Using chrome: $CHROME"
+          "$CHROME" \
             --remote-debugging-port=9222 \
             --no-sandbox \
             --headless=new \
             --disable-gpu \
             --disable-dev-shm-usage \
             &
-          sleep 2
+          # Wait until CDP is actually accepting connections
+          for i in $(seq 1 10); do
+            curl -sf http://localhost:9222/json/version && break
+            echo "Waiting for CDP... ($i)"
+            sleep 1
+          done
 
-      # ── 6. Run scraper ─────────────────────────────────────────────────────
       - name: Run fetch.py
         run: python fetch.py
 
-      # ── 7. Commit & push generated files ──────────────────────────────────
       - name: Commit M3U8 output
         run: |
           git config user.name  "github-actions[bot]"
