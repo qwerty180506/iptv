@@ -54,15 +54,14 @@ async def main() -> None:
 
     async with async_playwright() as p:
         ext_browser = None
-        hdl_browser = None
         try:
             ext_browser = await network.browser(p, external=True)
-            hdl_browser = await network.browser(p)
 
             pw_tasks = [
                 asyncio.create_task(timstreams.scrape(ext_browser)),
+                # When adding scrapers that need headless Firefox, do:
+                # hdl_browser = await network.browser(p)
                 # asyncio.create_task(cdnlivetv.scrape(hdl_browser)),
-                # asyncio.create_task(embedhd.scrape(hdl_browser)),
             ]
 
             httpx_tasks: list = [
@@ -75,8 +74,6 @@ async def main() -> None:
         finally:
             if ext_browser:
                 await ext_browser.close()
-            if hdl_browser:
-                await hdl_browser.close()
             await network.client.aclose()
 
     additions = (
