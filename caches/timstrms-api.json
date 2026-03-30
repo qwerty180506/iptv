@@ -481,22 +481,6 @@
       ]
     },
     {
-      "url": "germany-vs-ghana",
-      "name": "Germany vs Ghana",
-      "logo": "https://www.thesportsdb.com/images/media/event/thumb/bdiqkk1774692968.jpg",
-      "genre": 1,
-      "time": "2026-03-30T14:45",
-      "isevent": true,
-      "vip": false,
-      "streams": [
-        {
-          "name": "Fox Sports 1",
-          "url": "https://embed.timstreams.fit/embed/fox-sports-1",
-          "vip": false
-        }
-      ]
-    },
-    {
       "url": "wwe-monday-night-raw",
       "name": "WWE: Monday Night RAW",
       "logo": "https://i.imgur.com/7Ec0mM3.png",
@@ -508,42 +492,6 @@
         {
           "name": "Netflix",
           "url": "https://embed.timstreams.fit/embed/wwe-netflix",
-          "vip": false
-        }
-      ]
-    },
-    {
-      "url": "rajasthan-royals-vs-chennai-super-kings",
-      "name": "Rajasthan Royals vs. Chennai Super Kings",
-      "logo": "https://r2.thesportsdb.com/images/media/event/thumb/gkt1hh1680099054.jpg",
-      "genre": 13,
-      "time": "2026-03-30T10:00",
-      "isevent": true,
-      "vip": false,
-      "streams": [
-        {
-          "name": "Fox Sports 501",
-          "url": "https://embed.timstreams.fit/embed/fox-sports-501",
-          "vip": false
-        },
-        {
-          "name": "Star Sport 1 Hindi",
-          "url": "https://embed.timstreams.fit/embed/star-sport-1-hindi",
-          "vip": false
-        },
-        {
-          "name": "Sky Sport 1 NZ",
-          "url": "https://embed.timstreams.fit/embed/sky-sport-1-nz",
-          "vip": false
-        },
-        {
-          "name": "Willow Cricket",
-          "url": "https://embed.timstreams.fit/embed/willow-cricket",
-          "vip": false
-        },
-        {
-          "name": "Willow 2 (Hindi)",
-          "url": "https://embed.timstreams.fit/embed/willow-cricket-2",
           "vip": false
         }
       ]
@@ -568,5 +516,5 @@
     "16": "Live Shows",
     "17": "Others / Uncategorized"
   },
-  "timestamp": 1774884420.0
+  "timestamp": 1774906440.0
 }
