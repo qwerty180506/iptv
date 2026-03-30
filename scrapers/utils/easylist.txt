@@ -1,0 +1,11 @@
+# easylist.txt — one hostname per line, used as an ad/tracker blocklist.
+#
+# Replace with a real list, for example download from:
+#   https://raw.githubusercontent.com/nicholasstephan/easylist/master/easylist_adservers.txt
+#
+# Or generate your own list of domains to block.
+#
+# Example entries:
+# doubleclick.net
+# googleadservices.com
+# googlesyndication.com

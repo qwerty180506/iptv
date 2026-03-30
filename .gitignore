@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+
+# Logs (keep the dir, ignore the files)
+logs/*.log
+logs/*.log.*
+
+# Caches are committed (they speed up CI runs)
+# but ignore any temp files
+*.tmp
+
+# Local env
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
