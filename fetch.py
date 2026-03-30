@@ -3,11 +3,9 @@
 fetch.py — Main entry point.
 
 Runs all available scrapers, then generates:
-  - events.m3u8  : live events only
-  - TV.m3u8      : base channels + live events (if base.m3u8 exists)
+  - events.m3u8 : live events only
 """
 import asyncio
-import re
 from pathlib import Path
 
 from playwright.async_api import async_playwright
@@ -22,27 +20,12 @@ from scrapers.utils import get_logger, network
 
 log = get_logger(__name__)
 
-BASE_FILE = Path(__file__).parent / "base.m3u8"
 EVENTS_FILE = Path(__file__).parent / "events.m3u8"
-COMBINED_FILE = Path(__file__).parent / "TV.m3u8"
 
 TVG_URL = (
     'url-tvg="https://raw.githubusercontent.com/'
     'YOUR_USERNAME/YOUR_REPO/refs/heads/main/TV.xml"'
 )
-
-
-def load_base() -> tuple[list[str], int]:
-    """Load base.m3u8 and find the highest channel number in it."""
-    if not BASE_FILE.exists():
-        log.warning("base.m3u8 not found — combined TV.m3u8 will be skipped")
-        return [], 0
-
-    log.info("Fetching base M3U8")
-    data = BASE_FILE.read_text(encoding="utf-8")
-    pattern = re.compile(r'tvg-chno="(\d+)"')
-    last_chnl_num = max(map(int, pattern.findall(data)), default=0)
-    return data.splitlines(), last_chnl_num
 
 
 def build_entry(
@@ -69,14 +52,11 @@ def build_entry(
 async def main() -> None:
     log.info(f"{'=' * 10} Scraper Started {'=' * 10}")
 
-    base_m3u8, tvg_chno = load_base()
-
     async with async_playwright() as p:
+        ext_browser = None
+        hdl_browser = None
         try:
-            # external browser (CDP) — used by timstreams
             ext_browser = await network.browser(p, external=True)
-
-            # headless Firefox — used by playwright-based scrapers
             hdl_browser = await network.browser(p)
 
             pw_tasks = [
@@ -93,48 +73,34 @@ async def main() -> None:
             await asyncio.gather(*(pw_tasks + httpx_tasks))
 
         finally:
-            await ext_browser.close()
-            await hdl_browser.close()
+            if ext_browser:
+                await ext_browser.close()
+            if hdl_browser:
+                await hdl_browser.close()
             await network.client.aclose()
 
-    # ── Merge all scraper url dicts ──────────────────────────────────────────
     additions = (
         timstreams.urls
         # | cdnlivetv.urls
-        # | embedhd.urls
         # | shark.urls
     )
 
     if not additions:
-        log.warning("No live events collected — M3U8 files will be empty")
+        log.warning("No live events collected — events.m3u8 will be empty")
 
     live_events: list[str] = []
-    combined_channels: list[str] = []
 
     for i, (event, info) in enumerate(sorted(additions.items()), start=1):
-        combined_channels.extend(
-            build_entry(event, info, chno=tvg_chno + i, ua=network.UA)
-        )
         live_events.extend(
             build_entry(event, info, chno=i, ua=network.UA)
         )
 
-    # ── Write events.m3u8 ───────────────────────────────────────────────────
     EVENTS_FILE.write_text(
         f"#EXTM3U {TVG_URL}\n" + "\n".join(live_events),
         encoding="utf-8",
     )
-    log.info(f"Events saved to {EVENTS_FILE.resolve()} ({len(additions)} event(s))")
 
-    # ── Write TV.m3u8 (base + events) ───────────────────────────────────────
-    if base_m3u8:
-        COMBINED_FILE.write_text(
-            "\n".join(base_m3u8 + combined_channels),
-            encoding="utf-8",
-        )
-        log.info(f"Base + Events saved to {COMBINED_FILE.resolve()}")
-    else:
-        log.info("Skipping TV.m3u8 (no base.m3u8 found)")
+    log.info(f"Events saved to {EVENTS_FILE.resolve()} ({len(additions)} event(s))")
 
 
 if __name__ == "__main__":
