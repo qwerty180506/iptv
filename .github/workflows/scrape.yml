@@ -1,0 +1,60 @@
+name: Scrape & Publish M3U8
+
+on:
+  schedule:
+    # Runs every hour at :00
+    - cron: "0 * * * *"
+  workflow_dispatch: # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write # needed to push the generated .m3u8 files
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── 1. Checkout ────────────────────────────────────────────────────────
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # ── 2. Python ──────────────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # ── 3. Dependencies ────────────────────────────────────────────────────
+      - name: Install Python dependencies
+        run: pip install -e ".[dev]"
+
+      # ── 4. Playwright browsers ─────────────────────────────────────────────
+      - name: Install Playwright browsers
+        run: playwright install firefox chromium --with-deps
+
+      # ── 5. Launch Chromium via CDP (used by timstreams + streamsgate) ──────
+      - name: Start Chromium CDP on port 9222
+        run: |
+          chromium-browser \
+            --remote-debugging-port=9222 \
+            --no-sandbox \
+            --headless=new \
+            --disable-gpu \
+            --disable-dev-shm-usage \
+            &
+          sleep 2   # give it a moment to bind
+
+      # ── 6. Run scraper ─────────────────────────────────────────────────────
+      - name: Run fetch.py
+        run: python fetch.py
+
+      # ── 7. Commit & push generated files ──────────────────────────────────
+      - name: Commit M3U8 output
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add events.m3u8 TV.m3u8 caches/
+          git diff --cached --quiet || git commit -m "chore: update M3U8 [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
