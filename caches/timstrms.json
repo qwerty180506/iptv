@@ -1,10 +1,74 @@
 {
-  "[Baseball] Twins @ Royals (TIMSTRMS)": {
-    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/mlb-824135.m3u8?md5=32bc5d730acd4c1586ae54dd9a5e9939&exp=1774916807",
-    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/6bt3vo1756708502.jpg",
-    "base": "https://embed.timstreams.fit/embed/mlb-824135",
-    "timestamp": 1774901400.0,
+  "[Basketball] 76ers @ Heat (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/nba-0022501091.m3u8?md5=a7fe29f3b6b9750cd2edc5eb37be21bf&exp=1774920492",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/oen0yy1759234707.jpg",
+    "base": "https://embed.timstreams.fit/embed/nba-0022501091",
+    "timestamp": 1774911600.0,
+    "id": "NBA.Basketball.Dummy.us",
+    "link": "https://timstreams.fit/watch/76ers-v-heat-0022501091"
+  },
+  "[Basketball] Celtics @ Hawks (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/nba-0022501092.m3u8?md5=dd75739b196444209bedf0e09cd4033b&exp=1774920493",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/hzr9w01759234709.jpg",
+    "base": "https://embed.timstreams.fit/embed/nba-0022501092",
+    "timestamp": 1774913400.0,
+    "id": "NBA.Basketball.Dummy.us",
+    "link": "https://timstreams.fit/watch/celtics-v-hawks-0022501092"
+  },
+  "[Baseball] Rangers @ Orioles (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/mlb-824863.m3u8?md5=a14514263d72c3a27c28f61d3f824d6d&exp=1774920494",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/42tedp1715849947.jpg",
+    "base": "https://embed.timstreams.fit/embed/mlb-824863",
+    "timestamp": 1774910100.0,
     "id": "MLB.Baseball.Dummy.us",
-    "link": "https://timstreams.fit/watch/twins-v-royals-824135"
+    "link": "https://timstreams.fit/watch/rangers-v-orioles-824863"
+  },
+  "[Baseball] Pirates @ Reds (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/mlb-824539.m3u8?md5=aac857d78830d37f22e30a828d8a70f5&exp=1774920494",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/u0d4sa1756710414.jpg",
+    "base": "https://embed.timstreams.fit/embed/mlb-824539",
+    "timestamp": 1774910400.0,
+    "id": "MLB.Baseball.Dummy.us",
+    "link": "https://timstreams.fit/watch/pirates-v-reds-824539"
+  },
+  "[Baseball] Nationals @ Phillies (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/mlb-823484.m3u8?md5=98b09a3ed8aebf89a0997a8f943bec49&exp=1774920495",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/xg6nsf1754068917.jpg",
+    "base": "https://embed.timstreams.fit/embed/mlb-823484",
+    "timestamp": 1774910400.0,
+    "id": "MLB.Baseball.Dummy.us",
+    "link": "https://timstreams.fit/watch/nationals-v-phillies-823484"
+  },
+  "[Baseball] White Sox @ Marlins (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/mlb-823890.m3u8?md5=d219fbd6e78512d547f0aa98fa585647&exp=1774920496",
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/xvpc5p1774127187.jpg",
+    "base": "https://embed.timstreams.fit/embed/mlb-823890",
+    "timestamp": 1774910400.0,
+    "id": "MLB.Baseball.Dummy.us",
+    "link": "https://timstreams.fit/watch/white-sox-v-marlins-823890"
+  },
+  "[Baseball] Rockies @ Blue Jays (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/mlb-822834.m3u8?md5=e1e85080e06029910113198f64e8d3df&exp=1774920497",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/jui2uj1710234055.jpg",
+    "base": "https://embed.timstreams.fit/embed/mlb-822834",
+    "timestamp": 1774912020.0,
+    "id": "MLB.Baseball.Dummy.us",
+    "link": "https://timstreams.fit/watch/rockies-v-blue-jays-822834"
+  },
+  "[Baseball] Athletics @ Braves (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/mlb-824943.m3u8?md5=1c8df7f78d3b7754c7f8343ed76c24c5&exp=1774920497",
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/u943c61774127188.jpg",
+    "base": "https://embed.timstreams.fit/embed/mlb-824943",
+    "timestamp": 1774912500.0,
+    "id": "MLB.Baseball.Dummy.us",
+    "link": "https://timstreams.fit/watch/athletics-v-braves-824943"
+  },
+  "[Hockey] Pittsburgh @ New York (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/nhl-2025021173.m3u8?md5=3766f691ca57c8b3d5c23017a77c4e13&exp=1774920498",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/2nljfh1760901451.jpg",
+    "base": "https://embed.timstreams.fit/embed/nhl-2025021173",
+    "timestamp": 1774911600.0,
+    "id": "NHL.Hockey.Dummy.us",
+    "link": "https://timstreams.fit/watch/pittsburgh-v-new-york-2025021173"
   }
 }
