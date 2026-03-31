@@ -33,22 +33,6 @@
       ]
     },
     {
-      "url": "76ers-v-heat-0022501091",
-      "name": "76ers @ Heat",
-      "logo": "https://r2.thesportsdb.com/images/media/event/thumb/oen0yy1759234707.jpg",
-      "genre": 7,
-      "time": "2026-03-30T19:00",
-      "isevent": true,
-      "vip": false,
-      "streams": [
-        {
-          "name": "NBA League Pass",
-          "url": "https://embed.timstreams.fit/embed/nba-0022501091",
-          "vip": false
-        }
-      ]
-    },
-    {
       "url": "celtics-v-hawks-0022501092",
       "name": "Celtics @ Hawks",
       "logo": "https://r2.thesportsdb.com/images/media/event/thumb/hzr9w01759234709.jpg",
@@ -156,86 +140,6 @@
         {
           "name": "NBA League Pass",
           "url": "https://embed.timstreams.fit/embed/nba-0022501098",
-          "vip": false
-        }
-      ]
-    },
-    {
-      "url": "twins-v-royals-824135",
-      "name": "Twins @ Royals",
-      "logo": "https://r2.thesportsdb.com/images/media/event/thumb/6bt3vo1756708502.jpg",
-      "genre": 9,
-      "time": "2026-03-30T16:10",
-      "isevent": true,
-      "vip": false,
-      "streams": [
-        {
-          "name": "MLB.TV",
-          "url": "https://embed.timstreams.fit/embed/mlb-824135",
-          "vip": false
-        }
-      ]
-    },
-    {
-      "url": "rangers-v-orioles-824863",
-      "name": "Rangers @ Orioles",
-      "logo": "https://r2.thesportsdb.com/images/media/event/thumb/42tedp1715849947.jpg",
-      "genre": 9,
-      "time": "2026-03-30T18:35",
-      "isevent": true,
-      "vip": false,
-      "streams": [
-        {
-          "name": "MLB.TV",
-          "url": "https://embed.timstreams.fit/embed/mlb-824863",
-          "vip": false
-        }
-      ]
-    },
-    {
-      "url": "pirates-v-reds-824539",
-      "name": "Pirates @ Reds",
-      "logo": "https://r2.thesportsdb.com/images/media/event/thumb/u0d4sa1756710414.jpg",
-      "genre": 9,
-      "time": "2026-03-30T18:40",
-      "isevent": true,
-      "vip": false,
-      "streams": [
-        {
-          "name": "MLB.TV",
-          "url": "https://embed.timstreams.fit/embed/mlb-824539",
-          "vip": false
-        }
-      ]
-    },
-    {
-      "url": "nationals-v-phillies-823484",
-      "name": "Nationals @ Phillies",
-      "logo": "https://r2.thesportsdb.com/images/media/event/thumb/xg6nsf1754068917.jpg",
-      "genre": 9,
-      "time": "2026-03-30T18:40",
-      "isevent": true,
-      "vip": false,
-      "streams": [
-        {
-          "name": "MLB.TV",
-          "url": "https://embed.timstreams.fit/embed/mlb-823484",
-          "vip": false
-        }
-      ]
-    },
-    {
-      "url": "white-sox-v-marlins-823890",
-      "name": "White Sox @ Marlins",
-      "logo": "https://www.thesportsdb.com/images/media/event/thumb/xvpc5p1774127187.jpg",
-      "genre": 9,
-      "time": "2026-03-30T18:40",
-      "isevent": true,
-      "vip": false,
-      "streams": [
-        {
-          "name": "MLB.TV",
-          "url": "https://embed.timstreams.fit/embed/mlb-823890",
           "vip": false
         }
       ]
@@ -516,5 +420,5 @@
     "16": "Live Shows",
     "17": "Others / Uncategorized"
   },
-  "timestamp": 1774906440.0
+  "timestamp": 1774931400.0
 }
