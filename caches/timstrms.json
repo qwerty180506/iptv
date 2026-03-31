@@ -1,6 +1,6 @@
 {
   "[Soccer] Luxembourg vs Malta (TIMSTRMS)": {
-    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/fox-soccer-plus.m3u8?md5=e143783077dc3b14dd5861acd87de372&exp=1774983899",
+    "url": null,
     "logo": "https://r2.thesportsdb.com/images/media/event/thumb/eaepbp1742543937.jpg",
     "base": "https://embed.timstreams.fit/embed/fox-soccer-plus",
     "timestamp": 1774972800.0,
@@ -8,15 +8,71 @@
     "link": "https://timstreams.fit/watch/luxembourg-vs-malta"
   },
   "[Soccer] Latvia vs Gibraltar (TIMSTRMS)": {
-    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/fubo-sports-usa.m3u8?md5=13783fdf2c082b88df13945dcd81e8ac&exp=1774983900",
+    "url": null,
     "logo": "https://r2.thesportsdb.com/images/media/event/thumb/np3u1j1742543935.jpg",
     "base": "https://embed.timstreams.fit/embed/fubo-sports-usa",
     "timestamp": 1774972800.0,
     "id": "Soccer.Dummy.us",
     "link": "https://timstreams.fit/watch/latvia-vs-gibraltar"
   },
+  "[Soccer] Czech Republic vs Denmark (TIMSTRMS)": {
+    "url": null,
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/xegewb1774787569.jpg",
+    "base": "https://embed.timstreams.fit/embed/sky-sport-3-nz",
+    "timestamp": 1774982700.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/czech-republic-vs-denmark"
+  },
+  "[Soccer] Sweden vs Poland (TIMSTRMS)": {
+    "url": null,
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/7s1hfu1774787565.jpg",
+    "base": "https://embed.timstreams.fit/embed/sky-sport-2-nz",
+    "timestamp": 1774982700.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/sweden-vs-poland"
+  },
+  "[Soccer] Kosovo vs Turkey (TIMSTRMS)": {
+    "url": null,
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/8ztibj1774787566.jpg",
+    "base": "https://embed.timstreams.fit/embed/sky-sport-2-nz",
+    "timestamp": 1774982700.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/kosovo-vs-turkey"
+  },
+  "[Soccer] Bosnia and Herzegovina vs Italy (TIMSTRMS)": {
+    "url": null,
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/idfpl91774787568.jpg",
+    "base": "https://embed.timstreams.fit/embed/sky-sport-1-nz",
+    "timestamp": 1774982700.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/bosnia-and-herzegovina-vs-italy"
+  },
+  "[Soccer] England vs Japan (TIMSTRMS)": {
+    "url": null,
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/ic00lf1774693010.jpg",
+    "base": "https://embed.timstreams.fit/embed/sky-sport-5-nz",
+    "timestamp": 1774982700.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/england-vs-japan"
+  },
+  "[Soccer] Netherlands vs Ecuador (TIMSTRMS)": {
+    "url": null,
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/5dopll1774693012.jpg",
+    "base": "https://embed.timstreams.fit/embed/sky-sport-6-nz",
+    "timestamp": 1774982700.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/netherlands-vs-ecuador"
+  },
+  "[Soccer] Austria vs South Korea (TIMSTRMS)": {
+    "url": null,
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/5xo24h1774693015.jpg",
+    "base": "https://embed.timstreams.fit/embed/sky-sport-7-nz",
+    "timestamp": 1774982700.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/austria-vs-south-korea"
+  },
   "[Soccer] Norway vs Switzerland (TIMSTRMS)": {
-    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/fox-sports-2.m3u8?md5=196dde9d0ad2277e93c549aed64a2177&exp=1774983900",
+    "url": null,
     "logo": "https://www.thesportsdb.com/images/media/event/thumb/emhyp61774692987.jpg",
     "base": "https://embed.timstreams.fit/embed/fox-sports-2",
     "timestamp": 1774972800.0,
