@@ -1,10 +1,26 @@
 {
   "[Soccer] Punjab Kings vs Gujarat Titans (TIMSTRMS)": {
-    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/fox-sports-501.m3u8?md5=32c4ae4f03992b452ad543db16b3f247&exp=1774974297",
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/fox-sports-501.m3u8?md5=1eade40aec943bc0d99fc929c23961e4&exp=1774980032",
     "logo": "https://r2.thesportsdb.com/images/media/event/thumb/midv5l1712660207.jpg",
     "base": "https://embed.timstreams.fit/embed/fox-sports-501",
     "timestamp": 1774965600.0,
     "id": "Soccer.Dummy.us",
     "link": "https://timstreams.fit/watch/punjab-kings-vs-gujarat-titans"
+  },
+  "[Soccer] Luxembourg vs Malta (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/fox-soccer-plus.m3u8?md5=afd676f6843bbcc82081c8ec30ef1e64&exp=1774980033",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/eaepbp1742543937.jpg",
+    "base": "https://embed.timstreams.fit/embed/fox-soccer-plus",
+    "timestamp": 1774972800.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/luxembourg-vs-malta"
+  },
+  "[Soccer] Latvia vs Gibraltar (TIMSTRMS)": {
+    "url": "https://imgs-001.juno-api-noe.icu/secure/api/v1/fubo-sports-usa.m3u8?md5=ddebc6b3e17b5f3b6a36b74db02e934c&exp=1774980034",
+    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/np3u1j1742543935.jpg",
+    "base": "https://embed.timstreams.fit/embed/fubo-sports-usa",
+    "timestamp": 1774972800.0,
+    "id": "Soccer.Dummy.us",
+    "link": "https://timstreams.fit/watch/latvia-vs-gibraltar"
   }
 }
