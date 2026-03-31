@@ -67,7 +67,7 @@
       "url": "punjab-kings-vs-gujarat-titans",
       "name": "Punjab Kings vs Gujarat Titans",
       "logo": "https://r2.thesportsdb.com/images/media/event/thumb/midv5l1712660207.jpg",
-      "genre": 1,
+      "genre": 13,
       "time": "2026-03-31T10:00",
       "isevent": true,
       "vip": false,
@@ -88,13 +88,13 @@
           "vip": false
         },
         {
-          "name": "Willow Cricket",
-          "url": "https://embed.timstreams.fit/embed/willow-cricket",
+          "name": "Willow Adfree (English)",
+          "url": "https://embed.timstreams.fit/embed/willow-adfree-english",
           "vip": false
         },
         {
-          "name": "Willow Cricket 2 (Hindi)",
-          "url": "https://embed.timstreams.fit/embed/willow-cricket-2",
+          "name": "Willow Adfree (Hindi)",
+          "url": "https://embed.timstreams.fit/embed/willow-adfree-hindi",
           "vip": false
         }
       ]
@@ -130,6 +130,160 @@
           "vip": false
         }
       ]
+    },
+    {
+      "url": "czech-republic-vs-denmark",
+      "name": "Czech Republic vs Denmark",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/xegewb1774787569.jpg",
+      "genre": 1,
+      "time": "2026-03-31T14:45",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "Sky Sport 3 NZ",
+          "url": "https://embed.timstreams.fit/embed/sky-sport-3-nz",
+          "vip": false
+        }
+      ]
+    },
+    {
+      "url": "sweden-vs-poland",
+      "name": "Sweden vs Poland",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/7s1hfu1774787565.jpg",
+      "genre": 1,
+      "time": "2026-03-31T14:45",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "Sky Sport 2 NZ",
+          "url": "https://embed.timstreams.fit/embed/sky-sport-2-nz",
+          "vip": false
+        }
+      ]
+    },
+    {
+      "url": "kosovo-vs-turkey",
+      "name": "Kosovo vs Turkey",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/8ztibj1774787566.jpg",
+      "genre": 1,
+      "time": "2026-03-31T14:45",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "Sky Sport 2 NZ",
+          "url": "https://embed.timstreams.fit/embed/sky-sport-2-nz",
+          "vip": false
+        }
+      ]
+    },
+    {
+      "url": "bosnia-and-herzegovina-vs-italy",
+      "name": "Bosnia and Herzegovina vs Italy",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/idfpl91774787568.jpg",
+      "genre": 1,
+      "time": "2026-03-31T14:45",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "Sky Sport 1 NZ",
+          "url": "https://embed.timstreams.fit/embed/sky-sport-1-nz",
+          "vip": false
+        },
+        {
+          "name": "BHT1 Bosnia",
+          "url": "http://embed.timstreams.fit/embed/ev-3d23c90fca",
+          "vip": false
+        },
+        {
+          "name": "Rai1 Italia",
+          "url": "https://embed.timstreams.fit/embed/ev-cb59bb6f79",
+          "vip": false
+        }
+      ]
+    },
+    {
+      "url": "england-vs-japan",
+      "name": "England vs Japan",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/ic00lf1774693010.jpg",
+      "genre": 1,
+      "time": "2026-03-31T14:45",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "Sky Sport 5 NZ",
+          "url": "https://embed.timstreams.fit/embed/sky-sport-5-nz",
+          "vip": false
+        }
+      ]
+    },
+    {
+      "url": "netherlands-vs-ecuador",
+      "name": "Netherlands vs Ecuador",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/5dopll1774693012.jpg",
+      "genre": 1,
+      "time": "2026-03-31T14:45",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "Sky Sport 6 NZ",
+          "url": "https://embed.timstreams.fit/embed/sky-sport-6-nz",
+          "vip": false
+        }
+      ]
+    },
+    {
+      "url": "austria-vs-south-korea",
+      "name": "Austria vs South Korea",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/5xo24h1774693015.jpg",
+      "genre": 1,
+      "time": "2026-03-31T14:45",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "Sky Sport 7 NZ",
+          "url": "https://embed.timstreams.fit/embed/sky-sport-7-nz",
+          "vip": false
+        }
+      ]
+    },
+    {
+      "url": "norway-vs-switzerland",
+      "name": "Norway vs Switzerland",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/emhyp61774692987.jpg",
+      "genre": 1,
+      "time": "2026-03-31T12:00",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "Fox Sports 2",
+          "url": "https://embed.timstreams.fit/embed/fox-sports-2",
+          "vip": false
+        }
+      ]
+    },
+    {
+      "url": "spain-vs-egypt",
+      "name": "Spain vs Egypt",
+      "logo": "https://www.thesportsdb.com/images/media/event/thumb/hn6gag1774693019.jpg",
+      "genre": 1,
+      "time": "2026-03-31T15:00",
+      "isevent": true,
+      "vip": false,
+      "streams": [
+        {
+          "name": "TVE La 1",
+          "url": "https://embed.timstreams.fit/embed/ev-975d1545a4",
+          "vip": false
+        }
+      ]
     }
   ],
   "genres": {
@@ -151,5 +305,5 @@
     "16": "Live Shows",
     "17": "Others / Uncategorized"
   },
-  "timestamp": 1774954140.0
+  "timestamp": 1774976640.0
 }
