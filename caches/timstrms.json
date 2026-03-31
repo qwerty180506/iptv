@@ -1,20 +1,4 @@
 {
-  "[Soccer] Luxembourg vs Malta (TIMSTRMS)": {
-    "url": null,
-    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/eaepbp1742543937.jpg",
-    "base": "https://embed.timstreams.fit/embed/fox-soccer-plus",
-    "timestamp": 1774972800.0,
-    "id": "Soccer.Dummy.us",
-    "link": "https://timstreams.fit/watch/luxembourg-vs-malta"
-  },
-  "[Soccer] Latvia vs Gibraltar (TIMSTRMS)": {
-    "url": null,
-    "logo": "https://r2.thesportsdb.com/images/media/event/thumb/np3u1j1742543935.jpg",
-    "base": "https://embed.timstreams.fit/embed/fubo-sports-usa",
-    "timestamp": 1774972800.0,
-    "id": "Soccer.Dummy.us",
-    "link": "https://timstreams.fit/watch/latvia-vs-gibraltar"
-  },
   "[Soccer] Czech Republic vs Denmark (TIMSTRMS)": {
     "url": null,
     "logo": "https://www.thesportsdb.com/images/media/event/thumb/xegewb1774787569.jpg",
@@ -71,12 +55,12 @@
     "id": "Soccer.Dummy.us",
     "link": "https://timstreams.fit/watch/austria-vs-south-korea"
   },
-  "[Soccer] Norway vs Switzerland (TIMSTRMS)": {
+  "[Soccer] Spain vs Egypt (TIMSTRMS)": {
     "url": null,
-    "logo": "https://www.thesportsdb.com/images/media/event/thumb/emhyp61774692987.jpg",
-    "base": "https://embed.timstreams.fit/embed/fox-sports-2",
-    "timestamp": 1774972800.0,
+    "logo": "https://www.thesportsdb.com/images/media/event/thumb/hn6gag1774693019.jpg",
+    "base": "https://embed.timstreams.fit/embed/ev-975d1545a4",
+    "timestamp": 1774983600.0,
     "id": "Soccer.Dummy.us",
-    "link": "https://timstreams.fit/watch/norway-vs-switzerland"
+    "link": "https://timstreams.fit/watch/spain-vs-egypt"
   }
 }
